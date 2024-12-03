@@ -1,9 +1,20 @@
 /* Put colors here */
 
+:root {
+    --lavendar: #DACFFC;
+    --purple: #7650DC;
+    --cream: #F9EEE1;
+    --yellow: #FFCB6B;
+    --white: #FFFFFF;
+    --black: #121212;
 
-/* Put fonts here */
+}
+
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Put fonts here */
