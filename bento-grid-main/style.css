@@ -7,7 +7,6 @@
     --yellow: #FFCB6B;
     --white: #FFFFFF;
     --black: #121212;
-
 }
 
 
@@ -18,3 +17,152 @@
 }
 
 /* Put fonts here */
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Main Design*/
+main {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "box-seven box-one box-one box-four"
+    "box-seven box-two box-three box-four"
+    "box-eight box-six box-five box-five";
+}
+
+.box-one {
+    grid-area: box-one;
+    background: var(--purple);
+}
+
+.box-two {
+    grid-area: box-two;
+    background-color: var(--white);
+}
+
+.box-three {
+    grid-area: box-three;
+    background-color: var(--yellow);
+}
+
+.box-four {
+    grid-area: box-four;
+    background-color: var(--lavendar);
+}
+
+.box-five {
+    grid-area: box-five;
+    background-color: var(--purple);
+}
+
+.box-six {
+    grid-area: box-six;
+    background-color: var(--white);
+}
+
+.box-seven {
+    grid-area: box-seven;
+    background-color: var(--cream);
+}
+
+.box-eight {
+    grid-area: box-eight;
+    background-color: var(--yellow);
+}
+
+/* Footer */
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    /* header {
+
+    } */
+
+    main {
+        display: grid;
+        grid-row: repeat(8, 1fr);
+        grid-template-areas: 
+        "box-one"
+        "box-two"
+        "box-three"
+        "box-four"
+        "box-five"
+        "box-six"
+        "box-seven"
+        "box-eight";
+        gap: 2rem;
+        margin: 20px;
+        overflow: hidden;
+    }
+    
+    .box-one {
+        grid-area: box-one;
+        background-color: var(--purple);
+        border-radius: 20px;
+        align-content: center;
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .box-one h1 {
+        color: white;
+    }
+
+    .box-one p {
+        font-size: 18px;
+        color: white;
+    }
+
+    .box-one span {
+        color: var(--yellow);
+    }
+    
+    .box-two {
+        grid-area: box-two;
+        background-color: var(--white);
+    }
+    
+    .box-three {
+        grid-area: box-three;
+        background-color: var(--yellow);
+    }
+    
+    .box-four {
+        grid-area: box-four;
+        background-color: var(--lavendar);
+    }
+    
+    .box-five {
+        grid-area: box-five;
+        background-color: var(--purple);
+    }
+    
+    .box-six {
+        grid-area: box-six;
+        background-color: var(--white);
+    }
+    
+    .box-seven {
+        grid-area: box-seven;
+        background-color: var(--cream);
+    }
+    
+    .box-eight {
+        grid-area: box-eight;
+        background-color: var(--yellow);
+    }
+}
