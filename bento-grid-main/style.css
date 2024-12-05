@@ -33,17 +33,24 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: whitesmoke;
-    width: 100%;
+    background-color: #FAF9F6;
+    justify-content: center;
+    align-items: center;
 }
 
+p {
+    font-size: 18px;
+}
 
 /* Header */
 .head {
     background-color: var(--soft-navy);
+    width: 100%;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -81,10 +88,13 @@ body {
 /* Main Design*/
 main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 4fr 1fr 2.5fr 2.5fr;
+    grid-template-columns: repeat(4,200px);
+    grid-auto-columns: minmax(250px, auto);
+    grid-template-rows: 215px 115px 115px 215px;
+    grid-auto-rows: minmax(130px,auto);
     gap: 1.5rem;
     padding: 20px;
+    margin: 10px;
 }
 
 .box {
@@ -95,20 +105,22 @@ main {
     flex-direction: column;
 }
 
+.box img {
+    width: 50%;
+}
+
 .box-1 {
     background: var(--purple);
     grid-column: 2/4;
     grid-row: 1/2;
+    color: white;
+    text-align: center;
 }
 
-.box-1 h1 {
-    color: white;
+.box h1 {
+    font-style: italic;
 }
 
-.box-1 p {
-    font-size: 18px;
-    color: white;
-}
 
 .box-1 span {
     color: var(--yellow);
@@ -135,9 +147,11 @@ main {
 .box-5 {
     background-color: var(--purple);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     grid-column: 3/5;
     grid-row: 4/5;
+    color: white;
 }
 
 .box-6 {
@@ -163,6 +177,8 @@ main {
     background-color: var(--yellow);
     grid-column: 1/2;
     grid-row: 3/5;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Footer */
