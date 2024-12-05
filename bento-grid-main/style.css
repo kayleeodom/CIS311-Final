@@ -107,6 +107,9 @@ main {
 
 .box img {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .box-1 {
@@ -115,10 +118,13 @@ main {
     grid-row: 1/2;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .box h1 {
     font-style: italic;
+    font-size: 46px;
 }
 
 
