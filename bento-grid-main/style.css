@@ -43,7 +43,7 @@ body {
     align-items: center;
 }
 
-p {
+body p {
     font-size: 18px;
 }
 
@@ -122,16 +122,18 @@ main {
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
+    /* gap: 20px; */
 }
 
 .box-1 img {
     width: 50%;
+    margin-top: 20px;
 }
 
-.box h1 {
+.box-1 h1 {
     font-style: italic;
-    font-size: 46px;
-    /* line-height: 40px; */
+    font-size: 38px;
+    line-height: 40px;
 }
 
 .box-1 span {
@@ -142,20 +144,30 @@ main {
     background-color: var(--white);
     grid-column: 2/3;
     grid-row: 2/4;
+    /* font-size: 16px; */
+    overflow: hidden;
 }
 
 .box-2 img {
-    width: 40%;
+    width: 200%;
 }
 
 .box-3 {
     background-color: var(--yellow);
     grid-column: 3/4;
     grid-row: 2/4;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .box-3 img{
-    width: 40%;
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+.box-3 h2 {
+    font-size: 22px;
 }
 
 .box-4 {
@@ -164,11 +176,18 @@ main {
     grid-row: 1/4;
     display: flex;
     justify-content: space-evenly;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
 }
 
 .box-4 img {
-    width: 180px;
+    width: 280px;
     height: auto;
+}
+
+.box-4 p {
+    font-size: 13px;
 }
 
 .box-5 {
@@ -210,7 +229,7 @@ main {
 }
 
 .box-7 img {
-    width: 100%;
+    width: 110%;
 }
 
 .box-7 span {
@@ -223,11 +242,15 @@ main {
     grid-column: 1/2;
     grid-row: 3/5;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .box-8 img {
-    width: 100%;
+    width: 140px;
+}
+
+.box-8 h2 {
+    text-align: left;
 }
 
 /* Footer */
