@@ -56,7 +56,6 @@ body p {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* position: sticky; */
 }
 
 .logo img {
@@ -90,9 +89,9 @@ main {
     display: grid;
     grid-template-columns: repeat(4,200px);
     grid-auto-columns: minmax(250px, auto);
-    grid-template-rows: 215px 115px 115px 215px;
+    grid-template-rows: 240px 70px 114px 182px;
     grid-auto-rows: minmax(130px,auto);
-    gap: 1.5rem;
+    gap: 24px;
     padding: 20px;
     margin: 10px;
 }
@@ -103,7 +102,6 @@ main {
     justify-content: center;
     border-radius: 10px;
     flex-direction: column;
-    padding: 30px;
 }
 
 .box img {
@@ -113,6 +111,7 @@ main {
     display: block;
 }
 
+/* Done */
 .box-1 {
     background: var(--purple);
     grid-column: 2/4;
@@ -122,7 +121,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
-    /* gap: 20px; */
+    padding: 30px;
 }
 
 .box-1 img {
@@ -140,18 +139,27 @@ main {
     color: var(--yellow);
 }
 
+/* Done */
 .box-2 {
     background-color: var(--white);
     grid-column: 2/3;
     grid-row: 2/4;
-    /* font-size: 16px; */
     overflow: hidden;
+    padding: 20px;
+    gap: 14px;
 }
 
 .box-2 img {
-    width: 200%;
+    width: 152%;
+    box-shadow: 0 0 20px -15px black;
 }
 
+.box-2 h2 {
+    font-size: 25px;
+    line-height: .9;
+}
+
+/* Done */
 .box-3 {
     background-color: var(--yellow);
     grid-column: 3/4;
@@ -159,17 +167,20 @@ main {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    padding: 20px;
+    gap: 14px;
 }
 
 .box-3 img{
     width: 100%;
-    margin-top: 1.6rem;
 }
 
 .box-3 h2 {
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 1;
 }
 
+/* Done */
 .box-4 {
     background-color: var(--lavendar);
     grid-column: 4/5;
@@ -179,6 +190,7 @@ main {
     justify-content: center;
     overflow: hidden;
     gap: 10px;
+    padding: 30px;
 }
 
 .box-4 img {
@@ -190,6 +202,7 @@ main {
     font-size: 13px;
 }
 
+/* Done */
 .box-5 {
     background-color: var(--purple);
     display: flex;
@@ -198,9 +211,14 @@ main {
     grid-column: 3/5;
     grid-row: 4/5;
     color: white;
-    font-size: large;
-    gap: 1rem;
-    font-weight: 500;
+    gap: .8rem;
+    padding: 40px 20px;
+}
+
+.box-5 h2 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1;
 }
 
 .box-5 img {
@@ -209,16 +227,26 @@ main {
 
 .box-6 {
     background-color: var(--white);
-    display: flex;
-    flex-direction: column;
+    align-items: start;
     grid-column: 2/3;
     grid-row: 4/5;
+    padding: 20px;
+    gap: 14px;
 }
 
 .box-6 img {
-    width: 40%;
+    width: 90%;
 }
 
+.box-6 h1 {
+    font-size: 45px;
+}
+
+.box-6 p {
+    font-size: 14px;
+}
+
+/* Done */
 .box-7 {
     background-color: var(--cream);
     grid-column: 1/2;
@@ -226,6 +254,7 @@ main {
     font-style: normal;
     font-size: 18px;
     gap: 1rem;
+    padding: 30px;
 }
 
 .box-7 img {
@@ -243,14 +272,17 @@ main {
     grid-row: 3/5;
     display: flex;
     justify-content: space-between;
+    font-style: normal;
 }
 
 .box-8 img {
-    width: 140px;
+    width: 150px;
 }
 
 .box-8 h2 {
-    text-align: left;
+    line-height: 1;
+    font-size: 24px;
+
 }
 
 /* Footer */
@@ -316,9 +348,10 @@ main {
 
     } */
 
+
     main {
         display: grid;
-        grid-row: repeat(8, 1fr);
+        grid-template-columns: 1fr;
         grid-template-areas: 
         "box-1"
         "box-2"
@@ -336,8 +369,6 @@ main {
         grid-area: box-1;
         background-color: var(--purple);
         border-radius: 20px;
-        align-content: center;
-        justify-items: center;
         padding: 20px;
     }
     
@@ -374,5 +405,18 @@ main {
     .box-8 {
         grid-area: box-8;
         background-color: var(--yellow);
+    }
+
+    /* footer */
+    .footer-logo {
+        width: 30px;
+    }
+
+    .footer-nav li {
+        font-size: 20px;
+    }
+
+    .attribution {
+        font-size: 10px;
     }
 }
