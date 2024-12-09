@@ -344,7 +344,7 @@ main {
 
 .attribution {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .attribution a {
@@ -417,7 +417,9 @@ main {
     }
 
     /* Footer */
-    /* Stays the same as the desktop version */
+    .attribution {
+        font-size: 14px;
+    }
 }
 
 /* Mobile */
