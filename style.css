@@ -348,7 +348,7 @@ main {
 }
 
 .attribution a {
-    color: #FFCB6B;
+    color: #FFCB6B !important;
     text-decoration: none;
 }
 
