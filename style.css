@@ -59,7 +59,7 @@ body p {
 }
 
 .logo img {
-    max-height: 60px;
+    max-height: 70px;
     border-radius: 50%;
 }
 
@@ -339,7 +339,7 @@ main {
 }
 
 .footer-nav li:hover {
-    color: var(--yellow);
+    color: #FFCB6B;
 }
 
 .attribution {
@@ -349,7 +349,7 @@ main {
 }
 
 .attribution a {
-    color: var(--yellow);
+    color: #FFCB6B;
     text-decoration: none;
 }
 
