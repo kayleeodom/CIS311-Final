@@ -339,7 +339,7 @@ main {
 }
 
 .footer-nav li:hover {
-    color: #FFCB6B;
+    color: var(--yellow);
 }
 
 .attribution {
@@ -349,7 +349,7 @@ main {
 }
 
 .attribution a {
-    color: #FFCB6B;
+    color: var(--yellow);
     text-decoration: none;
 }
 
@@ -374,7 +374,6 @@ main {
 
 
     main {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 290px 164px 218px 470px 372px 220px 234px 352px;
         grid-template-areas: 
@@ -430,8 +429,6 @@ main {
         grid-area: box-3;
         background-color: var(--yellow);
     }
-
-    .box
     
     .box-4 {
         grid-area: box-4;
