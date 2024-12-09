@@ -375,7 +375,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 290px 164px 218px 470px 372px 220px 234px 352px;
+        grid-template-rows: 290px 164px 250px 500px 392px 220px 234px 392px;
         grid-template-areas: 
         "box-1"
         "box-2"
@@ -394,13 +394,14 @@ main {
         grid-area: box-1;
         background-color: var(--purple);
         border-radius: 20px;
-        padding: 30px;
+        padding: 40px;
+        font-weight: 400;
     }
 
     .box-1 h1 {
         font-size: 46px;
         line-height: 1;
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     .box-1 img {
@@ -412,7 +413,7 @@ main {
         grid-area: box-2;
         background-color: var(--white);
         gap: 10px;
-        padding: 20px;
+        padding: 30px 20px;
     }
 
     .box-2 img {
@@ -421,38 +422,119 @@ main {
     }
 
     .box-2 h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
     
-
+    /* Done */
     .box-3 {
         grid-area: box-3;
         background-color: var(--yellow);
+        /* ma-right: 40px; */
+    }
+
+    .box-3 h2 {
+        font-size: 28px;
+    }
+
+    .box-3 img {
+        width: 65%;
+        margin-right: 10rem;
     }
     
+    /* Done */
     .box-4 {
         grid-area: box-4;
         background-color: var(--lavendar);
+        justify-content: space-evenly;
+        gap: 16px;
+        padding: 30px;
+    }
+
+    .box-4 h2 {
+        font-size: 26px;
+    }
+
+    .box-4 img {
+        width: 100%;
+    }
+
+    .box-4 p {
+        text-align: center;
+        font-size: 20px;
+        margin: 0 30px;
     }
     
+    /* Done */
     .box-5 {
         grid-area: box-5;
         background-color: var(--purple);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 30px;
+    }
+
+    .box-5 h2 {
+        text-align: center;
+        font-size: 32px;
+        margin: 0 40px;
+        padding-bottom: 20px;
+    }
+
+    .box-5 img {
+        width: 70%;
+        padding-top: 20px;
     }
     
+    /* Done */
     .box-6 {
         grid-area: box-6;
         background-color: var(--white);
+        padding: 30px;
+        gap: 20px;
+    }
+
+    /* Done */
+    .box-6 p {
+        font-size: 18px;
+    }
+
+    .box-6 img {
+        width: 50%;
+        margin-right: 12rem;
     }
     
+    /* Done */
     .box-7 {
         grid-area: box-7;
         background-color: var(--cream);
+        gap: 20px;
+    }
+
+    .box-7 h2 {
+        font-size: 30px;
+    }
+
+    .box-7 img {
+        width: 60%;
+        margin-right: 9rem;
     }
     
+    /* Done */
     .box-8 {
         grid-area: box-8;
         background-color: var(--yellow);
+        gap: 15px;
+        padding: 30px;
+    }
+
+    .box-8 h2 {
+        font-size: 34px;
+    }
+
+    .box-8 img{
+        width: 70%;
+        margin-right: 10rem;
     }
 
     /* footer */
@@ -461,10 +543,11 @@ main {
     }
 
     .footer-nav li {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .attribution {
         font-size: 10px;
+        margin-left: 20px;
     }
 }
