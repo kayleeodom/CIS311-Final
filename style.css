@@ -309,14 +309,23 @@ main {
 
 /* Footer */
 .footer {
-    background-color: var(--soft-navy);
-    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.footer-top {
+    padding: 20px 20px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--soft-navy);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-bottom {
+    text-align: center
 }
 
 .footer-logo img {
